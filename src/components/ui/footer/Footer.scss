@@ -1,0 +1,9 @@
+@import "src/settings";
+
+footer {
+  bottom: 15px;
+  color: $c-main;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}

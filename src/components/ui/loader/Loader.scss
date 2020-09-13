@@ -1,0 +1,37 @@
+@import "src/settings";
+
+.loader {
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 50px;
+
+  div {
+    animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    border: 4px solid $c-main;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+
+    &:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+  }
+}
+
+@keyframes loader {
+  0% {
+    height: 0;
+    left: 24px;
+    opacity: 1;
+    top: 24px;
+    width: 0;
+  }
+  100% {
+    height: 48px;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    width: 48px;
+  }
+}

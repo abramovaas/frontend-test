@@ -1,0 +1,28 @@
+@import "src/settings";
+
+.task-info {
+  max-width: 400px;
+
+  &__date {
+    color: $c-main;
+    flex: 0 0 auto;
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: right;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}

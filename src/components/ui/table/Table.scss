@@ -1,0 +1,50 @@
+@import "../../../settings";
+
+.table {
+  background-color: $c-white;
+  border-collapse: collapse;
+  position: relative;
+
+  &__header {
+    background-color: $c-main;
+    color: $c-white;
+    position: sticky;
+    top: 0;
+
+    &-item {
+      padding: 12px;
+      text-align: left;
+      width: 150px;
+    }
+  }
+
+  &__loader {
+    height: 70px;
+    position: relative;
+
+    .loader {
+      left: 50%;
+      position: absolute;
+      top: 5px;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &__row {
+    border-bottom: 1px solid $c-grey;
+
+    &:hover {
+      background-color: $c-secondary !important;
+      cursor: pointer;
+    }
+
+    &-item {
+      padding: 12px;
+      width: 150px;
+    }
+  }
+
+  tr {
+    display: block;
+  }
+}

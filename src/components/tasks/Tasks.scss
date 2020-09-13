@@ -1,0 +1,22 @@
+.tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  &__table {
+    border-radius: 10px;
+    overflow: auto;
+    max-height: calc(100vh - 50px);
+    transition: 0.3s;
+  }
+
+  &__id,
+  &__priority {
+    width: 20px;
+  }
+
+  &__name {
+    width: 350px;
+  }
+}
